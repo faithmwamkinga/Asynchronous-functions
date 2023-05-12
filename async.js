@@ -34,28 +34,33 @@ message();
 //task is successful and rejects if there's an error. Write a function that calls performTask() and 
 //logs a custom success message if the task is successful, and a custom error message if there's an
 //error.
-// function performTask() {
-    
-// }
-// let taskSuccessful = true;
-// let promises = new Promise((resolve,reject)=>{
-//     if (taskSuccessful){
-//         setTimeout
-//         {resolve("Task is successful")}
-//     }
-//     else{
-//         reject("Error")
-//     }
+
+// function doTask() {
+//     performTask()
+//       .then(() => {
+//         console.log("Task was successful!");
+//       })
+//       .catch((error) => {
+//         console.log("There is an error:", error);
+//       });
+//   }
+
+  let success = "Do job";
+let promises = new Promise((resolve,reject)=>{
+    if (success){
+        setTimeout
+        {resolve("The job was successful")}
+    }
+    else{
+        reject("There is an error")
+    }
 
 
-// }).then(()=>{console.log("I wil work hard");})
-// .catch(()=>{
-    // console.log("I will upskill");
-
-// }).finally(()=>{console.log("I am worthy");})
-// const student=async()=>{
-//     let result= promise
-//     console.log(result);
-// }
-// student()
+}).then(()=>{console.log("I wil work hard");})
+const performTask=async()=>{
+    let result= promise
+    console.log(result);
+}
+performTask()
+ 
 
